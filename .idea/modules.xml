@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/cookyourface-core/cookyourface-core.iml" filepath="$PROJECT_DIR$/cookyourface-core/cookyourface-core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cookyourface-parent/cookyourface-parent.iml" filepath="$PROJECT_DIR$/cookyourface-parent/cookyourface-parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cookyourface-web/cookyourface-web.iml" filepath="$PROJECT_DIR$/cookyourface-web/cookyourface-web.iml" />
+    </modules>
+  </component>
+</project>
