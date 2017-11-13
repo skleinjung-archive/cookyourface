@@ -1,0 +1,19 @@
+<h2>Recipes</h2>
+
+<div class="add-form">
+  <h3>Add New Recipe</h3>
+  <div>
+    <label>Title:</label> <input #recipeTitle />
+  </div>
+  <div>
+    <button (click)="add(recipeTitle.value); recipeTitle.value=''">
+      Add
+    </button>
+  </div>
+</div>
+
+<ul class="recipes">
+  <li *ngFor="let recipe of recipes" (click)="onSelect(recipe)" [class.selected]="recipe === selectedRecipe">
+    <span class="badge">{{recipe.id}}</span> {{recipe.title}}
+  </li>
+</ul>
