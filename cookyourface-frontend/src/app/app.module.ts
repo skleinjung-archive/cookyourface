@@ -7,15 +7,15 @@ import {AppRoutingModule} from "./app-routing.module";
 
 import {AppComponent} from "./app.component";
 import {RecipesComponent} from "./recipes.component";
+import {RecipeDetailComponent} from "./recipe-detail.component";
 import {DashboardComponent} from "./dashboard.component";
 import {RecipeService} from "./recipe.service";
-
 
 @NgModule({
   declarations: [
     AppComponent,
     RecipesComponent,
-    // RecipeDetailsComponent,
+    RecipeDetailComponent,
     DashboardComponent
   ],
   imports: [

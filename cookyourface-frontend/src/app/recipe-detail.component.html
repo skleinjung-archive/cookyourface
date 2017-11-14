@@ -1,0 +1,78 @@
+<div *ngIf="recipe">
+  <h2>Recipe: {{recipe.title}}</h2>
+
+  <div><label>ID: </label> {{recipe.id}}</div>
+
+  <h3>Details</h3>
+
+  <div>
+    <label>Name: </label>
+    <input [(ngModel)]="recipe.title" placeholder="title">
+  </div>
+  <div>
+    <label>Category: </label>
+    <input [(ngModel)]="recipe.category" placeholder="category">
+  </div>
+  <div>
+    <label>Tags: </label>
+    <input [(ngModel)]="recipe.tags" placeholder="tags">
+  </div>
+  <div>
+    <label>Prep Time: </label>
+    <input [(ngModel)]="recipe.prepTime" placeholder="prep time">
+  </div>
+  <div>
+    <label>Cook Time: </label>
+    <input [(ngModel)]="recipe.cookTime" placeholder="cook time">
+  </div>
+
+  <h3>Ingredients</h3>
+
+  <div>
+    <table>
+      <tr>
+        <th>Quantity</th>
+        <th>Amount</th>
+        <th>Ingredient</th>
+        <th></th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>lb</td>
+        <td>ground beef</td>
+        <td>Remove Row</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>cups</td>
+        <td>ginger</td>
+        <td>Remove Row</td>
+      </tr>
+    </table>
+    <div>Add New Row</div>
+  </div>
+
+  <h3>Equipment</h3>
+
+  <div>
+    <table>
+      <tr>
+        <th>Name</th>
+        <th></th>
+      </tr>
+      <tr>
+        <td>Blender</td>
+        <td>Remove Row</td>
+      </tr>
+      <tr>
+        <td>Melon Baller</td>
+        <td>Remove Row</td>
+      </tr>
+    </table>
+    <div>Add New Row</div>
+  </div>
+
+  <button (click)="goBack()">Back</button>
+  <button (click)="save()">Save</button>
+</div>
+
